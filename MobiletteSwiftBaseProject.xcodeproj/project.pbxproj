@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69D508901BA8638000677D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5088F1BA8638000677D3C /* AppDelegate.swift */; };
+		69D508921BA8638000677D3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508911BA8638000677D3C /* ViewController.swift */; };
+		69D508951BA8638100677D3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D508931BA8638100677D3C /* Main.storyboard */; };
+		69D508971BA8638100677D3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D508961BA8638100677D3C /* Images.xcassets */; };
+		69D5089A1BA8638100677D3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D508981BA8638100677D3C /* LaunchScreen.xib */; };
+		69D508A61BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508A51BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69D508A01BA8638100677D3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69D508821BA8638000677D3C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69D508891BA8638000677D3C;
+			remoteInfo = MobiletteSwiftBaseProject;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		69D5088A1BA8638000677D3C /* MobiletteSwiftBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiletteSwiftBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D5088E1BA8638000677D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69D5088F1BA8638000677D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69D508911BA8638000677D3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		69D508941BA8638100677D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69D508961BA8638100677D3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		69D508991BA8638100677D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		69D5089F1BA8638100677D3C /* MobiletteSwiftBaseProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiletteSwiftBaseProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69D508A41BA8638100677D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69D508A51BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiletteSwiftBaseProjectTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69D508871BA8638000677D3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D5089C1BA8638100677D3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69D508811BA8638000677D3C = {
+			isa = PBXGroup;
+			children = (
+				69D5088C1BA8638000677D3C /* MobiletteSwiftBaseProject */,
+				69D508A21BA8638100677D3C /* MobiletteSwiftBaseProjectTests */,
+				69D5088B1BA8638000677D3C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69D5088B1BA8638000677D3C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69D5088A1BA8638000677D3C /* MobiletteSwiftBaseProject.app */,
+				69D5089F1BA8638100677D3C /* MobiletteSwiftBaseProjectTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69D5088C1BA8638000677D3C /* MobiletteSwiftBaseProject */ = {
+			isa = PBXGroup;
+			children = (
+				69D5088F1BA8638000677D3C /* AppDelegate.swift */,
+				69D508911BA8638000677D3C /* ViewController.swift */,
+				69D508931BA8638100677D3C /* Main.storyboard */,
+				69D508961BA8638100677D3C /* Images.xcassets */,
+				69D508981BA8638100677D3C /* LaunchScreen.xib */,
+				69D5088D1BA8638000677D3C /* Supporting Files */,
+			);
+			path = MobiletteSwiftBaseProject;
+			sourceTree = "<group>";
+		};
+		69D5088D1BA8638000677D3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69D5088E1BA8638000677D3C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		69D508A21BA8638100677D3C /* MobiletteSwiftBaseProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				69D508A51BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift */,
+				69D508A31BA8638100677D3C /* Supporting Files */,
+			);
+			path = MobiletteSwiftBaseProjectTests;
+			sourceTree = "<group>";
+		};
+		69D508A31BA8638100677D3C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69D508A41BA8638100677D3C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69D508891BA8638000677D3C /* MobiletteSwiftBaseProject */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D508A91BA8638100677D3C /* Build configuration list for PBXNativeTarget "MobiletteSwiftBaseProject" */;
+			buildPhases = (
+				69D508861BA8638000677D3C /* Sources */,
+				69D508871BA8638000677D3C /* Frameworks */,
+				69D508881BA8638000677D3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobiletteSwiftBaseProject;
+			productName = MobiletteSwiftBaseProject;
+			productReference = 69D5088A1BA8638000677D3C /* MobiletteSwiftBaseProject.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69D5089E1BA8638100677D3C /* MobiletteSwiftBaseProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69D508AC1BA8638100677D3C /* Build configuration list for PBXNativeTarget "MobiletteSwiftBaseProjectTests" */;
+			buildPhases = (
+				69D5089B1BA8638100677D3C /* Sources */,
+				69D5089C1BA8638100677D3C /* Frameworks */,
+				69D5089D1BA8638100677D3C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69D508A11BA8638100677D3C /* PBXTargetDependency */,
+			);
+			name = MobiletteSwiftBaseProjectTests;
+			productName = MobiletteSwiftBaseProjectTests;
+			productReference = 69D5089F1BA8638100677D3C /* MobiletteSwiftBaseProjectTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69D508821BA8638000677D3C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = Mobilette;
+				TargetAttributes = {
+					69D508891BA8638000677D3C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					69D5089E1BA8638100677D3C = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 69D508891BA8638000677D3C;
+					};
+				};
+			};
+			buildConfigurationList = 69D508851BA8638000677D3C /* Build configuration list for PBXProject "MobiletteSwiftBaseProject" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69D508811BA8638000677D3C;
+			productRefGroup = 69D5088B1BA8638000677D3C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69D508891BA8638000677D3C /* MobiletteSwiftBaseProject */,
+				69D5089E1BA8638100677D3C /* MobiletteSwiftBaseProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69D508881BA8638000677D3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D508951BA8638100677D3C /* Main.storyboard in Resources */,
+				69D5089A1BA8638100677D3C /* LaunchScreen.xib in Resources */,
+				69D508971BA8638100677D3C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D5089D1BA8638100677D3C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69D508861BA8638000677D3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D508921BA8638000677D3C /* ViewController.swift in Sources */,
+				69D508901BA8638000677D3C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69D5089B1BA8638100677D3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69D508A61BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69D508A11BA8638100677D3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69D508891BA8638000677D3C /* MobiletteSwiftBaseProject */;
+			targetProxy = 69D508A01BA8638100677D3C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69D508931BA8638100677D3C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69D508941BA8638100677D3C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69D508981BA8638100677D3C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69D508991BA8638100677D3C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69D508A71BA8638100677D3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69D508A81BA8638100677D3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69D508AA1BA8638100677D3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MobiletteSwiftBaseProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		69D508AB1BA8638100677D3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MobiletteSwiftBaseProject/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		69D508AD1BA8638100677D3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MobiletteSwiftBaseProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiletteSwiftBaseProject.app/MobiletteSwiftBaseProject";
+			};
+			name = Debug;
+		};
+		69D508AE1BA8638100677D3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MobiletteSwiftBaseProjectTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiletteSwiftBaseProject.app/MobiletteSwiftBaseProject";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69D508851BA8638000677D3C /* Build configuration list for PBXProject "MobiletteSwiftBaseProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D508A71BA8638100677D3C /* Debug */,
+				69D508A81BA8638100677D3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69D508A91BA8638100677D3C /* Build configuration list for PBXNativeTarget "MobiletteSwiftBaseProject" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D508AA1BA8638100677D3C /* Debug */,
+				69D508AB1BA8638100677D3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		69D508AC1BA8638100677D3C /* Build configuration list for PBXNativeTarget "MobiletteSwiftBaseProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69D508AD1BA8638100677D3C /* Debug */,
+				69D508AE1BA8638100677D3C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69D508821BA8638000677D3C /* Project object */;
+}
