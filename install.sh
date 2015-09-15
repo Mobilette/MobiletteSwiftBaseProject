@@ -20,3 +20,5 @@ echo "Did finish to install $NEW_PROJECT_NAME with base project.";
 echo "Start to install pods.";
 pod install
 echo "Did finish to install pods.";
+rm -f install.sh
+echo "Did remove setup files.";
