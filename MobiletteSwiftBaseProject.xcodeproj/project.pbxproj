@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		69D508901BA8638000677D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5088F1BA8638000677D3C /* AppDelegate.swift */; };
-		69D508921BA8638000677D3C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508911BA8638000677D3C /* ViewController.swift */; };
-		69D508951BA8638100677D3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D508931BA8638100677D3C /* Main.storyboard */; };
 		69D508971BA8638100677D3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D508961BA8638100677D3C /* Images.xcassets */; };
-		69D5089A1BA8638100677D3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D508981BA8638100677D3C /* LaunchScreen.xib */; };
 		69D508A61BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508A51BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift */; };
+		69D508B61BA8648800677D3C /* APIDateISO8601Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508B41BA8648800677D3C /* APIDateISO8601Transform.swift */; };
+		69D508B71BA8648800677D3C /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508B51BA8648800677D3C /* RouterProtocol.swift */; };
+		69D508BB1BA8673700677D3C /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508BA1BA8673700677D3C /* RootWireframe.swift */; };
+		69D508CC1BA86CFD00677D3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D508CA1BA86CFD00677D3C /* Main.storyboard */; };
+		69D508D11BA86D6B00677D3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D508CF1BA86D6B00677D3C /* LaunchScreen.xib */; };
+		A57EA98A618BA8AA0E6807CB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B90A448DE9B3D5C1B5E4CC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,16 +29,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45B90A448DE9B3D5C1B5E4CC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		566E8C53D1B8647270A43707 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		69D5088A1BA8638000677D3C /* MobiletteSwiftBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiletteSwiftBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D5088E1BA8638000677D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D5088F1BA8638000677D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		69D508911BA8638000677D3C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		69D508941BA8638100677D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		69D508961BA8638100677D3C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		69D508991BA8638100677D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		69D5089F1BA8638100677D3C /* MobiletteSwiftBaseProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiletteSwiftBaseProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D508A41BA8638100677D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D508A51BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiletteSwiftBaseProjectTests.swift; sourceTree = "<group>"; };
+		69D508B41BA8648800677D3C /* APIDateISO8601Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIDateISO8601Transform.swift; path = ../APIDateISO8601Transform.swift; sourceTree = "<group>"; };
+		69D508B51BA8648800677D3C /* RouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		69D508BA1BA8673700677D3C /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		69D508CB1BA86CFD00677D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MobiletteSwiftBaseProject/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
+		69D508D01BA86D6B00677D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MobiletteSwiftBaseProject/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
+		932D6B899F805DB37AD7132B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A57EA98A618BA8AA0E6807CB /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,12 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A4C87E926BDB0B63253C1E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				566E8C53D1B8647270A43707 /* Pods.debug.xcconfig */,
+				932D6B899F805DB37AD7132B /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		69D508811BA8638000677D3C = {
 			isa = PBXGroup;
 			children = (
 				69D5088C1BA8638000677D3C /* MobiletteSwiftBaseProject */,
 				69D508A21BA8638100677D3C /* MobiletteSwiftBaseProjectTests */,
 				69D5088B1BA8638000677D3C /* Products */,
+				0A4C87E926BDB0B63253C1E8 /* Pods */,
+				7EE775331AEA09B9C37AEC35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +97,8 @@
 		69D5088C1BA8638000677D3C /* MobiletteSwiftBaseProject */ = {
 			isa = PBXGroup;
 			children = (
-				69D5088F1BA8638000677D3C /* AppDelegate.swift */,
-				69D508911BA8638000677D3C /* ViewController.swift */,
-				69D508931BA8638100677D3C /* Main.storyboard */,
-				69D508961BA8638100677D3C /* Images.xcassets */,
-				69D508981BA8638100677D3C /* LaunchScreen.xib */,
+				69D508AF1BA8638700677D3C /* Classes */,
+				69D508BC1BA868A500677D3C /* Resources */,
 				69D5088D1BA8638000677D3C /* Supporting Files */,
 			);
 			path = MobiletteSwiftBaseProject;
@@ -112,6 +129,91 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		69D508AF1BA8638700677D3C /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				69D508B11BA863C000677D3C /* Commons */,
+				69D508B01BA863B900677D3C /* Modules */,
+				69D5088F1BA8638000677D3C /* AppDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		69D508B01BA863B900677D3C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				69D508B91BA8672000677D3C /* Root */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		69D508B11BA863C000677D3C /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				69D508B31BA8645300677D3C /* API */,
+				69D508B21BA8643300677D3C /* Domain */,
+			);
+			path = Commons;
+			sourceTree = "<group>";
+		};
+		69D508B21BA8643300677D3C /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		69D508B31BA8645300677D3C /* API */ = {
+			isa = PBXGroup;
+			children = (
+				69D508B81BA8649400677D3C /* Components */,
+				69D508B51BA8648800677D3C /* RouterProtocol.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		69D508B81BA8649400677D3C /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				69D508B41BA8648800677D3C /* APIDateISO8601Transform.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		69D508B91BA8672000677D3C /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				69D508BA1BA8673700677D3C /* RootWireframe.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		69D508BC1BA868A500677D3C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69D508BE1BA868C000677D3C /* Storyboards */,
+				69D508CF1BA86D6B00677D3C /* LaunchScreen.xib */,
+				69D508961BA8638100677D3C /* Images.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		69D508BE1BA868C000677D3C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				69D508CA1BA86CFD00677D3C /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		7EE775331AEA09B9C37AEC35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45B90A448DE9B3D5C1B5E4CC /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69D508A91BA8638100677D3C /* Build configuration list for PBXNativeTarget "MobiletteSwiftBaseProject" */;
 			buildPhases = (
+				019878E077D9F022F19EE994 /* Check Pods Manifest.lock */,
 				69D508861BA8638000677D3C /* Sources */,
 				69D508871BA8638000677D3C /* Frameworks */,
 				69D508881BA8638000677D3C /* Resources */,
+				EB3D9BEE86C5DB8443A9A843 /* Embed Pods Frameworks */,
+				6130C38562E6BBACDC1E3770 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,7 +278,6 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
-				en,
 				Base,
 			);
 			mainGroup = 69D508811BA8638000677D3C;
@@ -192,8 +296,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69D508951BA8638100677D3C /* Main.storyboard in Resources */,
-				69D5089A1BA8638100677D3C /* LaunchScreen.xib in Resources */,
+				69D508CC1BA86CFD00677D3C /* Main.storyboard in Resources */,
+				69D508D11BA86D6B00677D3C /* LaunchScreen.xib in Resources */,
 				69D508971BA8638100677D3C /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,12 +311,62 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		019878E077D9F022F19EE994 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6130C38562E6BBACDC1E3770 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB3D9BEE86C5DB8443A9A843 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		69D508861BA8638000677D3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69D508921BA8638000677D3C /* ViewController.swift in Sources */,
+				69D508BB1BA8673700677D3C /* RootWireframe.swift in Sources */,
+				69D508B71BA8648800677D3C /* RouterProtocol.swift in Sources */,
+				69D508B61BA8648800677D3C /* APIDateISO8601Transform.swift in Sources */,
 				69D508901BA8638000677D3C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -236,18 +390,18 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		69D508931BA8638100677D3C /* Main.storyboard */ = {
+		69D508CA1BA86CFD00677D3C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				69D508941BA8638100677D3C /* Base */,
+				69D508CB1BA86CFD00677D3C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		69D508981BA8638100677D3C /* LaunchScreen.xib */ = {
+		69D508CF1BA86D6B00677D3C /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				69D508991BA8638100677D3C /* Base */,
+				69D508D01BA86D6B00677D3C /* Base */,
 			);
 			name = LaunchScreen.xib;
 			sourceTree = "<group>";
@@ -340,6 +494,7 @@
 		};
 		69D508AA1BA8638100677D3C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 566E8C53D1B8647270A43707 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MobiletteSwiftBaseProject/Info.plist;
@@ -350,6 +505,7 @@
 		};
 		69D508AB1BA8638100677D3C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 932D6B899F805DB37AD7132B /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MobiletteSwiftBaseProject/Info.plist;
@@ -411,6 +567,7 @@
 				69D508AB1BA8638100677D3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		69D508AC1BA8638100677D3C /* Build configuration list for PBXNativeTarget "MobiletteSwiftBaseProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +576,7 @@
 				69D508AE1BA8638100677D3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
