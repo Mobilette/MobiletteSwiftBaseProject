@@ -22,3 +22,6 @@ pod install
 echo "Did finish to install pods.";
 rm -f install.sh
 echo "Did remove setup files.";
+rm -rf .git
+git init
+echo "Initialize git.";
