@@ -11,11 +11,10 @@
 		69D508971BA8638100677D3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D508961BA8638100677D3C /* Images.xcassets */; };
 		69D508A61BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508A51BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift */; };
 		69D508B61BA8648800677D3C /* APIDateISO8601Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508B41BA8648800677D3C /* APIDateISO8601Transform.swift */; };
-		69D508B71BA8648800677D3C /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508B51BA8648800677D3C /* RouterProtocol.swift */; };
 		69D508BB1BA8673700677D3C /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508BA1BA8673700677D3C /* RootWireframe.swift */; };
 		69D508CC1BA86CFD00677D3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D508CA1BA86CFD00677D3C /* Main.storyboard */; };
 		69D508D11BA86D6B00677D3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D508CF1BA86D6B00677D3C /* LaunchScreen.xib */; };
-		A57EA98A618BA8AA0E6807CB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B90A448DE9B3D5C1B5E4CC /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		A57EA98A618BA8AA0E6807CB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B90A448DE9B3D5C1B5E4CC /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +37,7 @@
 		69D5089F1BA8638100677D3C /* MobiletteSwiftBaseProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobiletteSwiftBaseProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D508A41BA8638100677D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D508A51BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiletteSwiftBaseProjectTests.swift; sourceTree = "<group>"; };
-		69D508B41BA8648800677D3C /* APIDateISO8601Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIDateISO8601Transform.swift; path = ../APIDateISO8601Transform.swift; sourceTree = "<group>"; };
-		69D508B51BA8648800677D3C /* RouterProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		69D508B41BA8648800677D3C /* APIDateISO8601Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDateISO8601Transform.swift; sourceTree = "<group>"; };
 		69D508BA1BA8673700677D3C /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		69D508CB1BA86CFD00677D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MobiletteSwiftBaseProject/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		69D508D01BA86D6B00677D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MobiletteSwiftBaseProject/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
@@ -167,7 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				69D508B81BA8649400677D3C /* Components */,
-				69D508B51BA8648800677D3C /* RouterProtocol.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -261,6 +258,7 @@
 		69D508821BA8638000677D3C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0720;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = Mobilette;
 				TargetAttributes = {
@@ -365,7 +363,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				69D508BB1BA8673700677D3C /* RootWireframe.swift in Sources */,
-				69D508B71BA8648800677D3C /* RouterProtocol.swift in Sources */,
 				69D508B61BA8648800677D3C /* APIDateISO8601Transform.swift in Sources */,
 				69D508901BA8638000677D3C /* AppDelegate.swift in Sources */,
 			);
