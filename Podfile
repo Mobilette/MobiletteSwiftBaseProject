@@ -8,6 +8,8 @@ pod 'ObjectMapper'
 
 pod 'PromiseKit'
 
+pod 'p2.OAuth2'
+
 pod 'NSLogger'
 pod 'MBLogger'
 pod 'MobiletteFoundation'
