@@ -11,7 +11,7 @@ import p2_OAuth2
 import MobiletteFoundation
 import PromiseKit
 
-class WildOAuth2APIService
+class OAuth2PasswordGrantService
 {
     // MARK: - Property
     
