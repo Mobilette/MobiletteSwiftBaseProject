@@ -11,7 +11,7 @@ import p2_OAuth2
 import MobiletteFoundation
 import PromiseKit
 
-class OAuth2PasswordGrantService
+class OAuth2PasswordGrantService: OAuth2APIProtocol
 {
     // MARK: - Property
     
@@ -20,28 +20,69 @@ class OAuth2PasswordGrantService
         "client_secret": "<# Client secret#>",
         "authorize_uri": "<# Authorize uri#>",
         "token_uri": "<# Token uri #>",
-        //"scope": "public write",
         "verbose": true,
+        "keychain": false
         ] as OAuth2JSON)
     
-    init()
+    func authorize(
+        username username: String,
+        password: String
+        ) -> Promise<MBOAuthCredential>
     {
-        
+        return Promise<MBOAuthCredential> { [weak self] fullfil, reject in
+            let credential: MBOAuthCredential
+            do {
+                credential = try MBOAuthCredential.retreiveCredential(userIdentifier: username)
+            }
+            catch _ as MBError {
+                self?.performAuthorize(username: username, password: password)
+                    .then { credential -> Void in
+                        fullfil(credential)
+                }
+                    .error { error in
+                        reject(error)
+                }
+                return
+            }
+            catch _ {
+                let error = MBUserDefaultsError.Unknown(0)
+                reject(error.error)
+                return
+            }
+            fullfil(credential)
+        }
     }
     
-    func signInUser(username: String, password: String) -> Promise<String>
+    private func performAuthorize(
+        username username: String,
+        password: String
+        ) -> Promise<MBOAuthCredential>
     {
-        return Promise<String> { fullfil, reject in
+        return Promise<MBOAuthCredential> { fullfil, reject in
             oauth2.username = username
             oauth2.password = password
             
-            oauth2.onAuthorize = { parameters in
-                self.didAuthorizeWithAccessToken(parameters, username: self.oauth2.username
-                )
-                fullfil("\(parameters)")
+            oauth2.onAuthorize = { [weak self] parameters in
+                if let credential = self?.buildCredential(parameters, username: username) {
+                    do {
+                        try credential.storeToKeychain()
+                    }
+                    catch let error as MBError {
+                        reject(error.error)
+                        return
+                    }
+                    catch _ {
+                        let error = MBUserDefaultsError.Unknown(0)
+                        reject(error.error)
+                        return
+                    }
+                    fullfil(credential)
+                }
+                else {
+                    // TODO: reject with specific error
+                }
             }
             oauth2.onFailure = { error in
-                self.didCancelOrFail(error)
                 if let error = error {
                     reject(error)
                 }
@@ -50,24 +91,15 @@ class OAuth2PasswordGrantService
         }
     }
     
-    func forgetToken()
+    private func buildCredential(parameters: OAuth2JSON, username: String) -> MBOAuthCredential?
     {
-        oauth2.forgetTokens()
-    }
-    
-    private func didAuthorizeWithAccessToken(parameters: OAuth2JSON, username: String)
-    {
-        if let refreshToken = parameters["refresh_token"], let accessToken = parameters["access_token"], let date = parameters["expires_in"] as? NSDate
+        if let refreshToken = parameters["refresh_token"],
+            let accessToken = parameters["access_token"],
+            let date = parameters["expires_in"] as? NSDate
         {
-            let authenfication = MBOAuthCredential(userIdentifier: username, accessToken: "\(accessToken)", refreshToken: "\(refreshToken)", expirationDate: date)
-            authenfication.isAuthenticated()
+            let credential = MBOAuthCredential(userIdentifier: username, accessToken: "\(accessToken)", refreshToken: "\(refreshToken)", expirationDate: date)
+            return credential
         }
-    }
-    
-    private func didCancelOrFail(error: ErrorType?)
-    {
-        if let error = error {
-            print("Authorization went wrong: \(error)")
-        }
+        return nil
     }
 }
