@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3591ACD11C56858A00645CE4 /* OAuth2PasswordGrantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591ACD01C56858A00645CE4 /* OAuth2PasswordGrantService.swift */; };
+		698F88561C5E1BC300A308F8 /* OAuth2APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F88551C5E1BC300A308F8 /* OAuth2APIProtocol.swift */; };
 		69D508901BA8638000677D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5088F1BA8638000677D3C /* AppDelegate.swift */; };
 		69D508971BA8638100677D3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D508961BA8638100677D3C /* Images.xcassets */; };
 		69D508A61BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508A51BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift */; };
@@ -28,8 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3591ACD01C56858A00645CE4 /* OAuth2PasswordGrantService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2PasswordGrantService.swift; sourceTree = "<group>"; };
 		45B90A448DE9B3D5C1B5E4CC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		566E8C53D1B8647270A43707 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		698F88551C5E1BC300A308F8 /* OAuth2APIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2APIProtocol.swift; sourceTree = "<group>"; };
 		69D5088A1BA8638000677D3C /* MobiletteSwiftBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiletteSwiftBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D5088E1BA8638000677D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D5088F1BA8638000677D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +74,15 @@
 				932D6B899F805DB37AD7132B /* Pods.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3591ACCF1C56853400645CE4 /* OAuth2 */ = {
+			isa = PBXGroup;
+			children = (
+				3591ACD01C56858A00645CE4 /* OAuth2PasswordGrantService.swift */,
+				698F88551C5E1BC300A308F8 /* OAuth2APIProtocol.swift */,
+			);
+			path = OAuth2;
 			sourceTree = "<group>";
 		};
 		69D508811BA8638000677D3C = {
@@ -148,6 +161,7 @@
 		69D508B11BA863C000677D3C /* Commons */ = {
 			isa = PBXGroup;
 			children = (
+				3591ACCF1C56853400645CE4 /* OAuth2 */,
 				69D508B31BA8645300677D3C /* API */,
 				69D508B21BA8643300677D3C /* Domain */,
 			);
@@ -362,6 +376,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				698F88561C5E1BC300A308F8 /* OAuth2APIProtocol.swift in Sources */,
+				3591ACD11C56858A00645CE4 /* OAuth2PasswordGrantService.swift in Sources */,
 				69D508BB1BA8673700677D3C /* RootWireframe.swift in Sources */,
 				69D508B61BA8648800677D3C /* APIDateISO8601Transform.swift in Sources */,
 				69D508901BA8638000677D3C /* AppDelegate.swift in Sources */,
