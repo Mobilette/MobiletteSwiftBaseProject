@@ -48,13 +48,12 @@ class RootTabWireframe: ModuleWireframeInterface
     
     // MARK: - Module Wireframe Interface
     
-//    var interfaceIdentifier: String { return "RootViewController" }
     var interfaceIdentifier: String = "RootTabViewController"
     
     func prepareInterface(fromViewController viewController: UIViewController)
     {
         guard let viewController = viewController as? RootTabViewController else {
-            abort()
+            fatalError("Invalid view controller type.")
         }
         viewController.presenter = self.presenter
         self.rootViewController = viewController
