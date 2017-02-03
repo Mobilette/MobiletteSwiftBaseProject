@@ -13,6 +13,7 @@
 		69B8F1A91E4403C100F7EE5A /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F1A81E4403C100F7EE5A /* ModuleFactory.swift */; };
 		69B8F1AB1E440E6000F7EE5A /* ModuleWireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F1AA1E440E6000F7EE5A /* ModuleWireframeInterface.swift */; };
 		69CA8CC11E441D9C00CB3AEE /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA8CC01E441D9C00CB3AEE /* SegueHandlerType.swift */; };
+		69CA8CDC1E442B1400CB3AEE /* StoryboardSegueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA8CDB1E442B1400CB3AEE /* StoryboardSegueDelegate.swift */; };
 		69D508901BA8638000677D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5088F1BA8638000677D3C /* AppDelegate.swift */; };
 		69D508971BA8638100677D3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D508961BA8638100677D3C /* Images.xcassets */; };
 		69D508A61BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508A51BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift */; };
@@ -40,6 +41,7 @@
 		69B8F1A81E4403C100F7EE5A /* ModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
 		69B8F1AA1E440E6000F7EE5A /* ModuleWireframeInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleWireframeInterface.swift; sourceTree = "<group>"; };
 		69CA8CC01E441D9C00CB3AEE /* SegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
+		69CA8CDB1E442B1400CB3AEE /* StoryboardSegueDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegueDelegate.swift; sourceTree = "<group>"; };
 		69D5088A1BA8638000677D3C /* MobiletteSwiftBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiletteSwiftBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D5088E1BA8638000677D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D5088F1BA8638000677D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 		69CA8CBF1E441D5000CB3AEE /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				69CA8CDB1E442B1400CB3AEE /* StoryboardSegueDelegate.swift */,
 				69CA8CC01E441D9C00CB3AEE /* SegueHandlerType.swift */,
 			);
 			path = Storyboard;
@@ -397,6 +400,7 @@
 				69B8F1A41E43F6F600F7EE5A /* RootTabPresenter.swift in Sources */,
 				69D508BB1BA8673700677D3C /* RootTabWireframe.swift in Sources */,
 				69B8F1AB1E440E6000F7EE5A /* ModuleWireframeInterface.swift in Sources */,
+				69CA8CDC1E442B1400CB3AEE /* StoryboardSegueDelegate.swift in Sources */,
 				69B8F1A51E43F6F600F7EE5A /* RootTabViewController.swift in Sources */,
 				69D508B61BA8648800677D3C /* APIDateISO8601Transform.swift in Sources */,
 				69D508901BA8638000677D3C /* AppDelegate.swift in Sources */,
