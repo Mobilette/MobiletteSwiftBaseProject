@@ -1,15 +1,17 @@
 source 'https://github.com/CocoaPods/Specs.git'
 source 'https://github.com/Mobilette/Specs.git'
-platform :ios, '8.0'
+platform :ios, '9.0'
 use_frameworks!
 
-pod 'Alamofire'
-pod 'ObjectMapper'
+target "MobiletteSwiftBaseProject" do
 
-pod 'PromiseKit'
+    pod 'Alamofire'
+    pod 'ObjectMapper'
 
-pod 'p2.OAuth2'
+    pod 'PromiseKit'
 
-pod 'NSLogger'
-pod 'MBLogger'
-pod 'MobiletteFoundation'
+    pod 'NSLogger'
+    pod 'MBLogger'
+    pod 'MobiletteFoundation'
+
+end

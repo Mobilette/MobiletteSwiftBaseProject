@@ -7,16 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3591ACD11C56858A00645CE4 /* OAuth2PasswordGrantService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3591ACD01C56858A00645CE4 /* OAuth2PasswordGrantService.swift */; };
-		698F88561C5E1BC300A308F8 /* OAuth2APIProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698F88551C5E1BC300A308F8 /* OAuth2APIProtocol.swift */; };
+		69B8F1A31E43F6F600F7EE5A /* RootTabModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F19F1E43F6F600F7EE5A /* RootTabModuleInterface.swift */; };
+		69B8F1A41E43F6F600F7EE5A /* RootTabPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F1A01E43F6F600F7EE5A /* RootTabPresenter.swift */; };
+		69B8F1A51E43F6F600F7EE5A /* RootTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F1A11E43F6F600F7EE5A /* RootTabViewController.swift */; };
+		69B8F1A91E4403C100F7EE5A /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F1A81E4403C100F7EE5A /* ModuleFactory.swift */; };
+		69B8F1AB1E440E6000F7EE5A /* ModuleWireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F1AA1E440E6000F7EE5A /* ModuleWireframeInterface.swift */; };
+		69CA8CC11E441D9C00CB3AEE /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA8CC01E441D9C00CB3AEE /* SegueHandlerType.swift */; };
 		69D508901BA8638000677D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5088F1BA8638000677D3C /* AppDelegate.swift */; };
 		69D508971BA8638100677D3C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69D508961BA8638100677D3C /* Images.xcassets */; };
 		69D508A61BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508A51BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift */; };
 		69D508B61BA8648800677D3C /* APIDateISO8601Transform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508B41BA8648800677D3C /* APIDateISO8601Transform.swift */; };
-		69D508BB1BA8673700677D3C /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508BA1BA8673700677D3C /* RootWireframe.swift */; };
+		69D508BB1BA8673700677D3C /* RootTabWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D508BA1BA8673700677D3C /* RootTabWireframe.swift */; };
 		69D508CC1BA86CFD00677D3C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69D508CA1BA86CFD00677D3C /* Main.storyboard */; };
 		69D508D11BA86D6B00677D3C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69D508CF1BA86D6B00677D3C /* LaunchScreen.xib */; };
-		A57EA98A618BA8AA0E6807CB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B90A448DE9B3D5C1B5E4CC /* Pods.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,10 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3591ACD01C56858A00645CE4 /* OAuth2PasswordGrantService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2PasswordGrantService.swift; sourceTree = "<group>"; };
-		45B90A448DE9B3D5C1B5E4CC /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		566E8C53D1B8647270A43707 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		698F88551C5E1BC300A308F8 /* OAuth2APIProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth2APIProtocol.swift; sourceTree = "<group>"; };
+		219F01CD688A2CD78C1F18C6 /* Pods-MobiletteSwiftBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiletteSwiftBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobiletteSwiftBaseProject/Pods-MobiletteSwiftBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		69B8F19F1E43F6F600F7EE5A /* RootTabModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabModuleInterface.swift; sourceTree = "<group>"; };
+		69B8F1A01E43F6F600F7EE5A /* RootTabPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabPresenter.swift; sourceTree = "<group>"; };
+		69B8F1A11E43F6F600F7EE5A /* RootTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabViewController.swift; sourceTree = "<group>"; };
+		69B8F1A81E4403C100F7EE5A /* ModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
+		69B8F1AA1E440E6000F7EE5A /* ModuleWireframeInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleWireframeInterface.swift; sourceTree = "<group>"; };
+		69CA8CC01E441D9C00CB3AEE /* SegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
 		69D5088A1BA8638000677D3C /* MobiletteSwiftBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiletteSwiftBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69D5088E1BA8638000677D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D5088F1BA8638000677D3C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,10 +48,10 @@
 		69D508A41BA8638100677D3C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69D508A51BA8638100677D3C /* MobiletteSwiftBaseProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobiletteSwiftBaseProjectTests.swift; sourceTree = "<group>"; };
 		69D508B41BA8648800677D3C /* APIDateISO8601Transform.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIDateISO8601Transform.swift; sourceTree = "<group>"; };
-		69D508BA1BA8673700677D3C /* RootWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		69D508BA1BA8673700677D3C /* RootTabWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabWireframe.swift; sourceTree = "<group>"; };
 		69D508CB1BA86CFD00677D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = MobiletteSwiftBaseProject/Base.lproj/Main.storyboard; sourceTree = SOURCE_ROOT; };
 		69D508D01BA86D6B00677D3C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = MobiletteSwiftBaseProject/Base.lproj/LaunchScreen.xib; sourceTree = SOURCE_ROOT; };
-		932D6B899F805DB37AD7132B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D2F0CD9A26AEEC0B50B0934F /* Pods-MobiletteSwiftBaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiletteSwiftBaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobiletteSwiftBaseProject/Pods-MobiletteSwiftBaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A57EA98A618BA8AA0E6807CB /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +75,27 @@
 		0A4C87E926BDB0B63253C1E8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				566E8C53D1B8647270A43707 /* Pods.debug.xcconfig */,
-				932D6B899F805DB37AD7132B /* Pods.release.xcconfig */,
+				219F01CD688A2CD78C1F18C6 /* Pods-MobiletteSwiftBaseProject.debug.xcconfig */,
+				D2F0CD9A26AEEC0B50B0934F /* Pods-MobiletteSwiftBaseProject.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		3591ACCF1C56853400645CE4 /* OAuth2 */ = {
+		69B8F1A71E44037E00F7EE5A /* Module */ = {
 			isa = PBXGroup;
 			children = (
-				3591ACD01C56858A00645CE4 /* OAuth2PasswordGrantService.swift */,
-				698F88551C5E1BC300A308F8 /* OAuth2APIProtocol.swift */,
+				69B8F1A81E4403C100F7EE5A /* ModuleFactory.swift */,
+				69B8F1AA1E440E6000F7EE5A /* ModuleWireframeInterface.swift */,
 			);
-			path = OAuth2;
+			path = Module;
+			sourceTree = "<group>";
+		};
+		69CA8CBF1E441D5000CB3AEE /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				69CA8CC01E441D9C00CB3AEE /* SegueHandlerType.swift */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		69D508811BA8638000677D3C = {
@@ -161,7 +174,8 @@
 		69D508B11BA863C000677D3C /* Commons */ = {
 			isa = PBXGroup;
 			children = (
-				3591ACCF1C56853400645CE4 /* OAuth2 */,
+				69CA8CBF1E441D5000CB3AEE /* Storyboard */,
+				69B8F1A71E44037E00F7EE5A /* Module */,
 				69D508B31BA8645300677D3C /* API */,
 				69D508B21BA8643300677D3C /* Domain */,
 			);
@@ -194,7 +208,10 @@
 		69D508B91BA8672000677D3C /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				69D508BA1BA8673700677D3C /* RootWireframe.swift */,
+				69B8F19F1E43F6F600F7EE5A /* RootTabModuleInterface.swift */,
+				69B8F1A01E43F6F600F7EE5A /* RootTabPresenter.swift */,
+				69B8F1A11E43F6F600F7EE5A /* RootTabViewController.swift */,
+				69D508BA1BA8673700677D3C /* RootTabWireframe.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -220,7 +237,6 @@
 		7EE775331AEA09B9C37AEC35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				45B90A448DE9B3D5C1B5E4CC /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -232,12 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69D508A91BA8638100677D3C /* Build configuration list for PBXNativeTarget "MobiletteSwiftBaseProject" */;
 			buildPhases = (
-				019878E077D9F022F19EE994 /* Check Pods Manifest.lock */,
+				019878E077D9F022F19EE994 /* [CP] Check Pods Manifest.lock */,
 				69D508861BA8638000677D3C /* Sources */,
 				69D508871BA8638000677D3C /* Frameworks */,
 				69D508881BA8638000677D3C /* Resources */,
-				EB3D9BEE86C5DB8443A9A843 /* Embed Pods Frameworks */,
-				6130C38562E6BBACDC1E3770 /* Copy Pods Resources */,
+				EB3D9BEE86C5DB8443A9A843 /* [CP] Embed Pods Frameworks */,
+				6130C38562E6BBACDC1E3770 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -273,14 +289,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0640;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = Mobilette;
 				TargetAttributes = {
 					69D508891BA8638000677D3C = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0820;
 					};
 					69D5089E1BA8638100677D3C = {
 						CreatedOnToolsVersion = 6.4;
+						LastSwiftMigration = 0820;
 						TestTargetID = 69D508891BA8638000677D3C;
 					};
 				};
@@ -324,49 +342,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		019878E077D9F022F19EE994 /* Check Pods Manifest.lock */ = {
+		019878E077D9F022F19EE994 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		6130C38562E6BBACDC1E3770 /* Copy Pods Resources */ = {
+		6130C38562E6BBACDC1E3770 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobiletteSwiftBaseProject/Pods-MobiletteSwiftBaseProject-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		EB3D9BEE86C5DB8443A9A843 /* Embed Pods Frameworks */ = {
+		EB3D9BEE86C5DB8443A9A843 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MobiletteSwiftBaseProject/Pods-MobiletteSwiftBaseProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -376,11 +394,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				698F88561C5E1BC300A308F8 /* OAuth2APIProtocol.swift in Sources */,
-				3591ACD11C56858A00645CE4 /* OAuth2PasswordGrantService.swift in Sources */,
-				69D508BB1BA8673700677D3C /* RootWireframe.swift in Sources */,
+				69B8F1A41E43F6F600F7EE5A /* RootTabPresenter.swift in Sources */,
+				69D508BB1BA8673700677D3C /* RootTabWireframe.swift in Sources */,
+				69B8F1AB1E440E6000F7EE5A /* ModuleWireframeInterface.swift in Sources */,
+				69B8F1A51E43F6F600F7EE5A /* RootTabViewController.swift in Sources */,
 				69D508B61BA8648800677D3C /* APIDateISO8601Transform.swift in Sources */,
 				69D508901BA8638000677D3C /* AppDelegate.swift in Sources */,
+				69B8F1A31E43F6F600F7EE5A /* RootTabModuleInterface.swift in Sources */,
+				69CA8CC11E441D9C00CB3AEE /* SegueHandlerType.swift in Sources */,
+				69B8F1A91E4403C100F7EE5A /* ModuleFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,14 +457,17 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -458,7 +483,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -480,8 +505,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -497,9 +524,10 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -507,23 +535,31 @@
 		};
 		69D508AA1BA8638100677D3C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 566E8C53D1B8647270A43707 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 219F01CD688A2CD78C1F18C6 /* Pods-MobiletteSwiftBaseProject.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MobiletteSwiftBaseProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.mobilette.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		69D508AB1BA8638100677D3C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 932D6B899F805DB37AD7132B /* Pods.release.xcconfig */;
+			baseConfigurationReference = D2F0CD9A26AEEC0B50B0934F /* Pods-MobiletteSwiftBaseProject.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MobiletteSwiftBaseProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.mobilette.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -541,7 +577,9 @@
 				);
 				INFOPLIST_FILE = MobiletteSwiftBaseProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.mobilette.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiletteSwiftBaseProject.app/MobiletteSwiftBaseProject";
 			};
 			name = Debug;
@@ -556,7 +594,9 @@
 				);
 				INFOPLIST_FILE = MobiletteSwiftBaseProjectTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.mobilette.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobiletteSwiftBaseProject.app/MobiletteSwiftBaseProject";
 			};
 			name = Release;

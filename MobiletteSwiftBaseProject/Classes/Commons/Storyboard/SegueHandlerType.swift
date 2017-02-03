@@ -1,24 +1,29 @@
 //
-//  MBSegueHandler.swift
-//  MBSegueHandler
+//  SegueHandlerType.swift
+//  MobiletteSwiftBaseProject
 //
-//  Created by Romain ASNAR on 19/11/15.
-//  Copyright © 2015 Romain ASNAR. All rights reserved.
+//  Mobilette template version 2.0
+//
+//  Created by Romain ASNAR on 25/04/16.
+//  Copyright © 2016 Mobilette. All rights reserved.
 //
 
 import UIKit
 
-public protocol SegueHandlerType {
+public protocol SegueHandlerType
+{
     associatedtype SegueIdentifier: RawRepresentable
 }
 
 extension SegueHandlerType where Self: UIViewController, SegueIdentifier.RawValue == String {
     
-    public func performSegueWithIdentifier(_ segueIdentifier: SegueIdentifier, sender: AnyObject?) {
+    public func performSegueWithIdentifier(segueIdentifier: SegueIdentifier, sender: AnyObject?)
+    {
         performSegue(withIdentifier: segueIdentifier.rawValue, sender: sender)
     }
     
-    public func segueIdentifierForSegue(_ segue: UIStoryboardSegue) -> SegueIdentifier {
+    public func segueIdentifierForSegue(segue: UIStoryboardSegue) -> SegueIdentifier
+    {
         guard let identifier = segue.identifier,
             let segueIdentifier = SegueIdentifier(rawValue: identifier)
             else {

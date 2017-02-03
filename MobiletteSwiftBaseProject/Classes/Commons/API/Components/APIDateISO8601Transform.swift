@@ -2,6 +2,8 @@
 //  APIDateISO8601Transform.swift
 //  MobiletteSwiftBaseProject
 //
+//  Mobilette template version 2.0
+//
 //  Created by Romain ASNAR on 9/15/15.
 //  Copyright (c) 2015 Mobilette. All rights reserved.
 //
@@ -9,30 +11,30 @@
 import Foundation
 import ObjectMapper
 
-public class APIDateISO8601Transform: TransformType
+open class APIDateISO8601Transform: TransformType
 {
-    public typealias Object = NSDate
+    public typealias Object = Date
     public typealias JSON = String
-    private static var dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
+    fileprivate static var dateFormat = "yyyy-MM-dd'T'HH:mm:ssZZZZZ"
     
-    public init() {}
+     public init() {}
     
-    public func transformFromJSON(value: AnyObject?) -> Object?
+    open func transformFromJSON(_ value: Any?) -> Date?
     {
         if let time = value as? String {
-            let dateFormatter = NSDateFormatter()
+            let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = APIDateISO8601Transform.dateFormat
-            return dateFormatter.dateFromString(time)
+            return dateFormatter.date(from: time)
         }
         return nil
     }
     
-    public func transformToJSON(value: NSDate?) -> JSON?
+    open func transformToJSON(_ value: Date?) -> JSON?
     {
         if let date = value {
-            let dateFormatter = NSDateFormatter()
+            let dateFormatter = DateFormatter()
             dateFormatter.dateFormat = APIDateISO8601Transform.dateFormat
-            return dateFormatter.stringFromDate(date)
+            return dateFormatter.string(from: date)
         }
         return nil
     }
