@@ -2,7 +2,7 @@
 //  RootTabWireframe.swift
 //  MobiletteSwiftBaseProject
 //
-//  Mobilette template version 2.0
+//  Mobilette template version 2.1
 //
 //  Created by Romain ASNAR on 25/04/16.
 //  Copyright © 2016 Mobilette. All rights reserved.
@@ -10,12 +10,22 @@
 
 import UIKit
 
-class RootTabWireframe: ModuleWireframeInterface
+class RootTabWireframe: Routable
 {
     // MARK: - Property
     
+    var interfaceIdentifier: String = "RootTabViewController"
     var presenter: RootTabModuleInterface? = nil
-    fileprivate var rootViewController: RootTabViewController? = nil
+    weak var viewController: RootTabViewController? = nil
+    
+    // MARK: - Storyboard segue
+    
+    private var preparedSegue: UIStoryboardSegue? = nil
+    
+    func prepare(for segue: UIStoryboardSegue, sender: Any?)
+    {
+        self.preparedSegue = segue
+    }
     
     // MARK: - Tab Controller Presentation
     
@@ -44,18 +54,5 @@ class RootTabWireframe: ModuleWireframeInterface
 //            let viewController = navigationViewController.viewControllers.first as? <# Interface name #>ViewController {
 //            wireframe.prepareInterface(fromViewController: viewController)
 //        }
-    }
-    
-    // MARK: - Module Wireframe Interface
-    
-    var interfaceIdentifier: String = "RootTabViewController"
-    
-    func prepareInterface(fromViewController viewController: UIViewController)
-    {
-        guard let viewController = viewController as? RootTabViewController else {
-            fatalError("Invalid view controller type.")
-        }
-        viewController.presenter = self.presenter
-        self.rootViewController = viewController
     }
 }

@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		517AC20501D2933DDAD84BBE /* Pods_MobiletteSwiftBaseProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2681DB1F626F8DF58AFDC576 /* Pods_MobiletteSwiftBaseProject.framework */; };
+		6946AB511E50F1BC00C17168 /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6946AB501E50F1BC00C17168 /* Presentable.swift */; };
 		69B8F1A31E43F6F600F7EE5A /* RootTabModuleInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F19F1E43F6F600F7EE5A /* RootTabModuleInterface.swift */; };
 		69B8F1A41E43F6F600F7EE5A /* RootTabPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F1A01E43F6F600F7EE5A /* RootTabPresenter.swift */; };
 		69B8F1A51E43F6F600F7EE5A /* RootTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F1A11E43F6F600F7EE5A /* RootTabViewController.swift */; };
 		69B8F1A91E4403C100F7EE5A /* ModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F1A81E4403C100F7EE5A /* ModuleFactory.swift */; };
-		69B8F1AB1E440E6000F7EE5A /* ModuleWireframeInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F1AA1E440E6000F7EE5A /* ModuleWireframeInterface.swift */; };
+		69B8F1AB1E440E6000F7EE5A /* Routable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69B8F1AA1E440E6000F7EE5A /* Routable.swift */; };
 		69CA8CC11E441D9C00CB3AEE /* SegueHandlerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA8CC01E441D9C00CB3AEE /* SegueHandlerType.swift */; };
 		69CA8CDC1E442B1400CB3AEE /* StoryboardSegueDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA8CDB1E442B1400CB3AEE /* StoryboardSegueDelegate.swift */; };
 		69D508901BA8638000677D3C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69D5088F1BA8638000677D3C /* AppDelegate.swift */; };
@@ -35,11 +37,13 @@
 
 /* Begin PBXFileReference section */
 		219F01CD688A2CD78C1F18C6 /* Pods-MobiletteSwiftBaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobiletteSwiftBaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MobiletteSwiftBaseProject/Pods-MobiletteSwiftBaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		2681DB1F626F8DF58AFDC576 /* Pods_MobiletteSwiftBaseProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MobiletteSwiftBaseProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6946AB501E50F1BC00C17168 /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 		69B8F19F1E43F6F600F7EE5A /* RootTabModuleInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabModuleInterface.swift; sourceTree = "<group>"; };
 		69B8F1A01E43F6F600F7EE5A /* RootTabPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabPresenter.swift; sourceTree = "<group>"; };
 		69B8F1A11E43F6F600F7EE5A /* RootTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RootTabViewController.swift; sourceTree = "<group>"; };
 		69B8F1A81E4403C100F7EE5A /* ModuleFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleFactory.swift; sourceTree = "<group>"; };
-		69B8F1AA1E440E6000F7EE5A /* ModuleWireframeInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModuleWireframeInterface.swift; sourceTree = "<group>"; };
+		69B8F1AA1E440E6000F7EE5A /* Routable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routable.swift; sourceTree = "<group>"; };
 		69CA8CC01E441D9C00CB3AEE /* SegueHandlerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueHandlerType.swift; sourceTree = "<group>"; };
 		69CA8CDB1E442B1400CB3AEE /* StoryboardSegueDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardSegueDelegate.swift; sourceTree = "<group>"; };
 		69D5088A1BA8638000677D3C /* MobiletteSwiftBaseProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobiletteSwiftBaseProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				517AC20501D2933DDAD84BBE /* Pods_MobiletteSwiftBaseProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,7 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				69B8F1A81E4403C100F7EE5A /* ModuleFactory.swift */,
-				69B8F1AA1E440E6000F7EE5A /* ModuleWireframeInterface.swift */,
+				69B8F1AA1E440E6000F7EE5A /* Routable.swift */,
+				6946AB501E50F1BC00C17168 /* Presentable.swift */,
 			);
 			path = Module;
 			sourceTree = "<group>";
@@ -240,6 +246,7 @@
 		7EE775331AEA09B9C37AEC35 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2681DB1F626F8DF58AFDC576 /* Pods_MobiletteSwiftBaseProject.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -399,13 +406,14 @@
 			files = (
 				69B8F1A41E43F6F600F7EE5A /* RootTabPresenter.swift in Sources */,
 				69D508BB1BA8673700677D3C /* RootTabWireframe.swift in Sources */,
-				69B8F1AB1E440E6000F7EE5A /* ModuleWireframeInterface.swift in Sources */,
+				69B8F1AB1E440E6000F7EE5A /* Routable.swift in Sources */,
 				69CA8CDC1E442B1400CB3AEE /* StoryboardSegueDelegate.swift in Sources */,
 				69B8F1A51E43F6F600F7EE5A /* RootTabViewController.swift in Sources */,
 				69D508B61BA8648800677D3C /* APIDateISO8601Transform.swift in Sources */,
 				69D508901BA8638000677D3C /* AppDelegate.swift in Sources */,
 				69B8F1A31E43F6F600F7EE5A /* RootTabModuleInterface.swift in Sources */,
 				69CA8CC11E441D9C00CB3AEE /* SegueHandlerType.swift in Sources */,
+				6946AB511E50F1BC00C17168 /* Presentable.swift in Sources */,
 				69B8F1A91E4403C100F7EE5A /* ModuleFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

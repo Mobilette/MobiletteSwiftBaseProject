@@ -1,15 +1,17 @@
 //
 //  StoryboardSegueDelegate.swift
-//  Xoopar
+//  MobiletteSwiftBaseProject
 //
-//  Created by Benaly Issouf M'sa on 29/05/16.
-//  Copyright © 2016 Mobilette. All rights reserved.
+//  Mobilette template version 2.1
+//
+//  Created by Romain Asnar on 2/3/17.
+//  Copyright © 2017 Mobilette. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-protocol StoryboardSegueDelegate
+protocol StoryboardSegueDelegate: class
 {
     func prepare(for segue: UIStoryboardSegue, sender: Any?)
 }

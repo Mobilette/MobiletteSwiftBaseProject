@@ -2,7 +2,7 @@
 //  RootTabViewController.swift
 //  MobiletteSwiftBaseProject
 //
-//  Mobilette template version 2.0
+//  Mobilette template version 2.1
 //
 //  Created by Romain ASNAR on 25/04/16.
 //  Copyright © 2016 Mobilette. All rights reserved.
@@ -10,10 +10,10 @@
 
 import Foundation
 import UIKit
-import MBLogger
 
 class RootTabViewController:
-    UITabBarController
+    UITabBarController,
+    Presentable
 {
     // MARK: - Type
     
@@ -26,6 +26,7 @@ class RootTabViewController:
 	// MARK: - Property
 
     var presenter: RootTabModuleInterface? = nil
+    weak var storyboardSegueDelegate: StoryboardSegueDelegate? = nil
 
 	// MARK: - Life cycle
 

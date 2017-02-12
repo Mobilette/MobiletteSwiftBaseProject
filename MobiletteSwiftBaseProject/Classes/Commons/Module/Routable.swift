@@ -1,8 +1,8 @@
 //
-//  ModuleWireframeInterface.swift
+//  Routable.swift
 //  MobiletteSwiftBaseProject
 //
-//  Mobilette template version 2.0
+//  Mobilette template version 2.1
 //
 //  Created by Romain Asnar on 2/3/17.
 //  Copyright © 2017 Mobilette. All rights reserved.
@@ -11,9 +11,14 @@
 import Foundation
 import UIKit
 
-protocol ModuleWireframeInterface: class
+protocol Routable: StoryboardSegueDelegate
 {
+    associatedtype PresentableObject: Presentable
+    
     var interfaceIdentifier: String { get }
+    var presenter: PresentableObject.Presenter? { get set }
+    weak var viewController: PresentableObject? { get set }
+    var storyboardName: String { get }
     
     func presentInterface(fromWindow window: UIWindow)
     func presentNavigationInterface(fromWindow window: UIWindow)
@@ -22,29 +27,41 @@ protocol ModuleWireframeInterface: class
     
     func prepareInterface(fromViewController viewController: UIViewController)
     
-    func mainStoryboard() -> UIStoryboard
+    func storyboard() -> UIStoryboard
     func viewControllerFromStoryboard() -> UIViewController
     func navigationControllerFromStoryboard() -> UINavigationController?
 }
 
-extension ModuleWireframeInterface
+extension Routable
 {
-    func mainStoryboard() -> UIStoryboard
+    var storyboardName: String { return "Main" }
+    
+    func prepareInterface(fromViewController viewController: UIViewController)
     {
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        guard let presentableViewController = viewController as? PresentableObject else {
+            fatalError("\(type(of: viewController)) is not presentable.")
+        }
+        presentableViewController.presenter = self.presenter
+        presentableViewController.storyboardSegueDelegate = self
+        self.viewController = presentableViewController
+    }
+    
+    func storyboard() -> UIStoryboard
+    {
+        let storyboard: UIStoryboard = UIStoryboard(name: storyboardName, bundle: Bundle.main)
         return storyboard
     }
     
     func viewControllerFromStoryboard() -> UIViewController
     {
-        let storyboard = self.mainStoryboard()
+        let storyboard = self.storyboard()
         let viewController = storyboard.instantiateViewController(withIdentifier: interfaceIdentifier)
         return viewController
     }
     
     func navigationControllerFromStoryboard() -> UINavigationController?
     {
-        let storyboard = self.mainStoryboard()
+        let storyboard = self.storyboard()
         let navigationController = storyboard.instantiateViewController(withIdentifier: interfaceIdentifier) as? UINavigationController
         return navigationController
     }
